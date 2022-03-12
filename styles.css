@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.section {
+    background-color: #f2395a;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 1000px;
+}
+
+.heading {
+    margin-left: 20%;
+
+}
+
+.phone,
+.tablet,
+.desctop {
+    background-color: #fff;
+    box-shadow: 13px 13px 32px 0 rgba(242, 57, 90, .3);
+    position: absolute;
+    transition: 1s;
+    transform: translateY(100%);
+
+}
+
+.section:hover .phone,
+.section:hover .tablet,
+.section:hover .desctop {
+    transform: translateY(10px) rotateY(15deg) rotateZ(20deg);
+}
+
+.phone {
+    width: 200px;
+    height: 280px;
+
+    left: 5%;
+    bottom: 0;
+    background: #fff url(https://i.pinimg.com/564x/df/c9/3b/dfc93b078887a722be2fe926c09a3fad.jpg) center no-repeat;
+    z-index: 3;
+    transition-delay: 0.2s;
+}
+
+.tablet {
+    width: 360px;
+    height: 380px;
+
+    background: #fff url(https://images.creativemarket.com/0.1.0/ps/8106212/1820/1214/m1/fpnw/wm0/preview1-.jpg?1586458470&s=ab2cf980b4affa14513baea0497efb0f);
+    bottom: 0;
+    left: 10%;
+    z-index: 1;
+    transition-delay: 0.4s;
+}
+
+.desctop {
+    width: 680px;
+    height: 480px;
+    background: #fff url(https://image.freepik.com/fotos-gratis/smoothies-verdes-com-legumes-e-frutas-dia-de-desintoxicacao_73944-4947.jpg);
+    bottom: 0;
+    left: 10%;
+    transition-delay: 0.6s;
+}
